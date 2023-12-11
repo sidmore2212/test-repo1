@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Gallary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="slider">
+        <span style="--i:2" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgDZYkLB4zLdRZaUJA2yGlVcsuHt640Y3aA&usqp=CAU" alt=""></span>
+        <span style="--i:3" ><img src="https://w0.peakpx.com/wallpaper/976/192/HD-wallpaper-hanuman-bajrangabli-thumbnail.jpg" alt=""></span>
+        <span style="--i:4" ><img src="https://e0.pxfuel.com/wallpapers/318/320/desktop-wallpaper-jai-hanuman-lord-hanuman-hanuman-hanuman-ji-hanuman-black-thumbnail.jpg" alt=""></span>
+        <span style="--i:5" ><img src="https://e0.pxfuel.com/wallpapers/928/398/desktop-wallpaper-animated-hanuman-lord-hanuman-3d-thumbnail.jpg" alt=""></span>
+        <span style="--i:6" ><img src="https://e0.pxfuel.com/wallpapers/539/144/desktop-wallpaper-jay-hanuman-animated-hanuman-thumbnail.jpg" alt=""></span>
+        <span style="--i:7" ><img src="https://e0.pxfuel.com/wallpapers/348/122/desktop-wallpaper-hanuman-hanuman-meditation-thumbnail.jpg" alt=""></span>
+        <span style="--i:8" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPjOKysCSdFaMp5CIixR4tkU4CmicAqZTKQ&usqp=CAU" alt=""></span>
+    </div> -->
+    <script>
+        // function check(){
+        //    throw new Error("Error: Param require")
+        // }
+        // function show(name=check()){
+        //     console.log(name)
+        // }
+        // show('')
+
+
+// function person(value){
+//     switch(true){
+//         case(value>=18 && value<= 40):console.log('eligible')
+//     break;
+//     default:console.log('not eligible')
+//     break;
+//     }
+// }
+// person(33)
+//  let a= [1,1,2,3,4,5,6,7,8,9,2,3,4,5,6,7,8,9,1]
+//  function remdup(a){
+//     return a.filter((v,i)=>
+//         a.indexOf(v)==i
+//     )
+//  }
+//  console.log(remdup(a))
+
+// function findDuplicates(arr) {
+//     let duplicates = {};
+//     arr.forEach(item => {
+//         if (arr.indexOf(item) !== arr.lastIndexOf(item)) {
+//             duplicates[item] = true;
+//         }
+//     });
+//     return Object.keys(duplicates);
+// }
+
+// let myArray = [1, 2, 3, 4, 2, 3, 5, 6, 1];
+// let duplicateItems = findDuplicates(myArray);
+
+// console.log("Duplicate items:", duplicateItems);
+
+const findDup =(arr)=>{
+    let sortArr= arr.slice().sort();
+    let result=[];
+    for (let i=0; i<sortArr.length-1; i++){
+        if(sortArr[i+1]===sortArr[i]){
+            result.push(sortArr[i])
+        }
+    }
+    return result
+}
+
+let array = [1,2,3,4,5,6,7,8,9,3,7,4,5,6];
+console.log(findDup(array))
+
+// const findDup = (arr) => {
+//     let sortArr = arr.slice().sort();
+//     let result = [];
+//     for (let i = 0; i < sortArr.length - 1; i++) {
+//         if (sortArr[i + 1] === sortArr[i]) {
+//             result.push(sortArr[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3, 7, 4, 5, 6];
+// console.log(`The duplicates in the array ${array} are ${findDup(array)}`);
+
+
+b
+    </script>
+</body>
+</html>
